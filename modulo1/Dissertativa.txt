@@ -1,0 +1,50 @@
+Exercício Módulo 1
+
+Questão 2
+
+Alternativa C - Programação Orientada a Objetos
+
+Justificativa:
+
+1 - Programação estruturada: Neste paradigma, o foco estaria em criar uma estrutura de dados e funções procedurais para manipular essas entidades. Embora seja possível criar objetos que represenem as entodades, a interação entre eles seria mais limitada e menos natural.
+
+2 - Programação Imperativa: Semelhante à programação estruturada, a programação imperativa também se concentraria em descrever os passos necessários para manupular as entidades do sistema. A interação entre objetos seria possível, mas não seria o foco principal.
+
+Programação Funcional: Embora seja possível impelmentar o sistema de gerenciamento da biblioteca usando programação funcional, este paradigma não seria o mais adequado, pois a ênfase estaria em transformações de dados e funções puras, em vez de modelagem e interação entre os objetos.
+
+Considerando estes pontos, a Programação Orientada a Objetos seria a escolha mais indicada para a implementação so sistema de gerenciamento da biblioteca, pois permite uma modelagem mais natural e eficiente das entidades e suas interações.
+
+Questão 3
+
+Pessoa: 
+     nome: String
+     lista de livros: Livro[] (array de objeto do tipo Livro)
+     
+Empréstimo: 
+     data de retirada: Date
+     data de devolução: Date
+     livro: Livro
+     usuário: Usuario
+     
+Usuario: 
+     idade: int
+     histórico de empréstimos: Emprestimo[] (array de objetos do tipo Emprestimo)
+     
+Livro: título: string
+
+Autor: 
+     nacionalidade: string
+     
+     
+Relações:
+
+1 Autor é 1 Pessoa
+1 usuário é 1 Pessoa
+1 Livro possui 1 Autor Principal
+Cada Autor pode escrever N Livros
+Cada Livro pode ser emprestado N vezes mas nçao pode estar em mais de 1 empréstimo por vez
+Cada usuário pode realizar N Emprestimos por vez
+Cada Emprestimo envolve pelo menos 1 Livro e apenas 1 usuário
+
+
+
