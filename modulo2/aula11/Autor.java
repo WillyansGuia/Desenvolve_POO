@@ -1,11 +1,13 @@
 public class Autor extends Pessoa {
     private String nacionalidade;
     private Livro[] obrasPublicadas;
+    private boolean isUsuario;
 
-    public Autor(String pessoa, String nacionalidade) {
+    public Autor(String pessoa, String nacionalidade, boolean isUsuario) {
         super(pessoa);
         this.nacionalidade = nacionalidade;
         this.obrasPublicadas = new Livro[0];
+        this.isUsuario = isUsuario
     }
 
     public String getNacionalidade() {
@@ -18,6 +20,10 @@ public class Autor extends Pessoa {
 
     public Livro[] getObrasPublicadas() {
         return obrasPublicadas;
+    }
+
+     public boolean isUsuario() {
+        return isUsuario;
     }
 
     public void setObrasPublicadas(Livro[] obrasPublicadas) {
@@ -39,5 +45,10 @@ public class Autor extends Pessoa {
             }
         }
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return nome + (isUsuario ? " (Usuário)" : " (Autor Tradicional)");
     }
 }
